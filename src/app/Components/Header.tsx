@@ -33,10 +33,11 @@ const Header = () => {
 
   return (
     <AppBar sx={{
-      height: "80px",
+      height: "100px",
       boxShadow: 'none',
       backgroundColor: 'white',
       padding: 0, 
+      paddingTop: 1,
     }}>
       <Toolbar sx={{
         display: 'flex',
