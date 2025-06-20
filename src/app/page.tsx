@@ -21,7 +21,7 @@ export default function Home() {
               src={images[0]}
               alt={images[0] ?? "placeholder"}
               fill
-              style={{ objectFit: "cover", marginTop:"70px"}}
+              style={{ objectFit: "cover", marginTop:"80px"}}
             />
             <Box sx={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.4)', zIndex: 1 }} />
             <Box sx={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 2 }}>

@@ -50,8 +50,8 @@ const Header = () => {
       }}>
         {/* pizza logo */}
         <Box sx={{ display: 'flex', alignItems: 'center', flexDirection:"row"}}>
-        <Image src="/images/pizza.jpeg" alt="Logo" width={50} height={50} />
-          <Typography sx={{color:"black", marginLeft: "26px", fontSize:"28px", fontWeight:'bold'}}>
+        <Image src="/images/pizza.jpeg" alt="Logo" width={40} height={40} />
+          <Typography sx={{color:"black", marginLeft: "26px", fontSize:"28px"}}>
             Woodstock&apos;s Employee Alliance
           </Typography>
         </Box>
@@ -75,6 +75,7 @@ const Header = () => {
                 color: 'black',
                 '&.Mui-selected': {
                   color: '#f44336',
+                  fontWeight:"bold"
                 },
                 '&.Mui-focusVisible': {
                   backgroundColor: 'transparent',
@@ -89,10 +90,12 @@ const Header = () => {
                 color: 'black',
                 '&.Mui-selected': {
                   color: '#f44336',
+                  fontWeight:"bold"
                 },
                 '&.Mui-focusVisible': {
                   backgroundColor: 'transparent',
                 },
+
               }}
             />
 
@@ -104,6 +107,7 @@ const Header = () => {
                 color: 'black',
                 '&.Mui-selected': {
                   color: '#f44336',
+                  fontWeight:"bold"
                 },
                 '&.Mui-focusVisible': {
                   backgroundColor: 'transparent',
@@ -118,6 +122,7 @@ const Header = () => {
                 color: 'black',
                 '&.Mui-selected': {
                   color: '#f44336',
+                  fontWeight:"bold"
                 },
                 '&.Mui-focusVisible': {
                   backgroundColor: 'transparent',
