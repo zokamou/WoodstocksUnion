@@ -1,8 +1,6 @@
-// import ImageCarousel from "./Components/Carousel";
-import {Box, Typography} from '@mui/material';
+'use client';
+import { Box, Typography, Container } from '@mui/material';
 import Image from 'next/image';
-
-// images 
 
 export default function Home() {
   const images = [
@@ -11,41 +9,82 @@ export default function Home() {
     "/images/IMG_3028.jpeg",
     "/images/IMG_3029.jpeg",
     "/images/IMG_3030.jpeg",
-    "/images/IMG_3031.jpeg"
+    "/images/IMG_3031.jpeg",
   ];
 
   return (
-    <div style={{ width: "100vw", height:"100vh", margin: 0 }}>
-      <Box sx={{ width: "100%", height: "500px", position: "relative", overflow: "hidden" }}>
-            <Image
-              src={images[0]}
-              alt={images[0] ?? "placeholder"}
-              fill
-              style={{ objectFit: "cover"}}
-            />
-            <Box sx={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.4)', zIndex: 1 }} />
-            <Box sx={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 2 }}>
-              <Typography variant="h3" sx={{color: 'white', fontWeight: 'bold', justifyContent:'center', textShadow: '2px 2px 6px rgba(0,0,0,0.8)' }}>
-                Stand with the WEA!
-              </Typography>
-            </Box>
-      </Box>
-      
-        <Box sx={{display:'flex', flexDirection:'column', marginTop:"80px", justifyContent:'center', alignItems:'center'}}>
-          <Box sx={{display:'flex', justifyContent:'center'}}>
-            <Typography sx={{fontWeight:'bold', fontSize: "32px"}}>
-              What is a Union?
-            </Typography>
-          </Box>
-          <Box sx={{marginTop: '-40px', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '800px', height: '200px',}}>
-            <Typography sx={{fontSize: "22px", color: "#525252", textAlign:'center'}}>
-            A union is an organization formed by workers to represent their collective interests in negotiations with employers, primarily around issues like wages, benefits, working conditions, and job security.
-            </Typography>
-          </Box>
+    <Box sx={{ width: '100vw', minHeight: '100vh', overflowX: 'hidden' }}>
+      <Box
+        sx={{
+          position: 'relative',
+          width: '100%',
+          height: { xs: '300px', sm: '400px', md: '500px' },
+        }}
+      >
+        <Image
+          src={images[0]}
+          alt="Hero"
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+        <Box
+          sx={{
+            position: 'absolute',
+            inset: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.4)',
+            zIndex: 1,
+          }}
+        />
+        <Box
+          sx={{
+            position: 'absolute',
+            inset: 0,
+            zIndex: 2,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            px: 2,
+          }}
+        >
+          <Typography
+            variant="h3"
+            sx={{
+              color: 'white',
+              fontWeight: 'bold',
+              textAlign: 'center',
+              fontSize: { xs: '1.8rem', sm: '2.5rem', md: '3rem' },
+              textShadow: '2px 2px 6px rgba(0,0,0,0.8)',
+            }}
+          >
+            Stand with the WEA!
+          </Typography>
         </Box>
-      
-    </div>
+      </Box>
+
+      {/* Union Section */}
+      <Container maxWidth="md" sx={{ py: { xs: 6, sm: 8, md: 10 }, px: 2 }}>
+        <Typography
+          variant="h4"
+          fontWeight="bold"
+          textAlign="center"
+          sx={{ mb: { xs: 2, md: 3 }, fontSize: { xs: '1.8rem', md: '2.2rem' } }}
+        >
+          What is a Union?
+        </Typography>
+
+        <Typography
+          variant="body1"
+          color="text.secondary"
+          textAlign="center"
+          sx={{
+            fontSize: { xs: '1rem', sm: '1.1rem', md: '1.25rem' },
+            maxWidth: '800px',
+            mx: 'auto',
+          }}
+        >
+          A union is an organization formed by workers to represent their collective interests in negotiations with employers, primarily around issues like wages, benefits, working conditions, and job security.
+        </Typography>
+      </Container>
+    </Box>
   );
 }
-
-
