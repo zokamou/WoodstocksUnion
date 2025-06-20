@@ -1,42 +1,46 @@
-// import ImageCarousel from "./Components/Carousel";
-import {Box, Typography, Link} from '@mui/material';
+'use client';
+import { Box, Typography, Link, Container } from '@mui/material';
 
 export default function Home() {
-
-
   return (
-    <div style={{ width: "100vw", height:"100vh", margin: 0 }}>
-        <Box sx={{display:'flex', flexDirection:'column', marginTop:"80px", justifyContent:'center', alignItems:'center'}}>
-          <Box sx={{display:'flex', justifyContent:'center'}}>
-            <Typography sx={{fontWeight:'bold', fontSize: "32px"}}>
-              Contact Us!
-            </Typography>
-          </Box>
-          <Box sx={{marginTop: '-40px', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '800px', height: '200px', flexDirection:'column'}}>
-            <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
-              If you have any questions or want to get involved, feel free to reach out:
-            </Typography>
+    <Box sx={{ width: '100vw', minHeight: '100vh', py: { xs: 6, md: 10 }, px: 2 }}>
+      <Container maxWidth="sm" sx={{ textAlign: 'center' }}>
+        <Typography
+          variant="h4"
+          fontWeight="bold"
+          gutterBottom
+          sx={{ fontSize: { xs: '1.8rem', md: '2.2rem' } }}
+        >
+          Contact Us!
+        </Typography>
 
-            <Box sx={{ mb: 1 }}>
-              <Typography variant="body1">
-                Email:{' '}
-                <Link href="mailto:woodstocks.union@gmail.com" underline="hover">
-                  woodstocks.union@gmail.com
-                </Link>
-              </Typography>
-            </Box>
+        <Typography variant="body1" color="text.secondary" sx={{ mb: 4 }}>
+          If you have any questions or want to get involved, feel free to reach out:
+        </Typography>
 
-            <Box>
-              <Typography variant="body1">
-                Instagram:{' '}
-                <Link href="https://instagram.com/waesc" target="_blank" rel="noopener" underline="hover">
-                  @waesc
-                </Link>
-              </Typography>
-            </Box>
+        <Box sx={{ mb: 2 }}>
+          <Typography variant="body1" sx={{ fontSize: { xs: '1rem', md: '1.1rem' } }}>
+            Email:{' '}
+            <Link href="mailto:woodstocks.union@gmail.com" underline="hover">
+              woodstocks.union@gmail.com
+            </Link>
+          </Typography>
         </Box>
-      </Box>
-      
-    </div>
+
+        <Box>
+          <Typography variant="body1" sx={{ fontSize: { xs: '1rem', md: '1.1rem' } }}>
+            Instagram:{' '}
+            <Link
+              href="https://instagram.com/waesc"
+              target="_blank"
+              rel="noopener noreferrer"
+              underline="hover"
+            >
+              @waesc
+            </Link>
+          </Typography>
+        </Box>
+      </Container>
+    </Box>
   );
 }
