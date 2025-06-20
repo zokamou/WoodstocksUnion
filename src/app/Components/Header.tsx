@@ -38,6 +38,8 @@ const Header = () => {
       backgroundColor: 'white',
       padding: 0, 
       paddingTop: 1,
+      borderBottom: '1px solid #b8b8b8', 
+      position:'static'
     }}>
       <Toolbar sx={{
         display: 'flex',

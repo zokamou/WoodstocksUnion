@@ -21,12 +21,12 @@ export default function Home() {
               src={images[0]}
               alt={images[0] ?? "placeholder"}
               fill
-              style={{ objectFit: "cover", marginTop:"80px"}}
+              style={{ objectFit: "cover"}}
             />
             <Box sx={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.4)', zIndex: 1 }} />
             <Box sx={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 2 }}>
-              <Typography variant="h3" sx={{marginTop: "100px", color: 'white', fontWeight: 'bold', justifyContent:'center', textShadow: '2px 2px 6px rgba(0,0,0,0.8)' }}>
-                Woodstock&apos;s Employee Alliance
+              <Typography variant="h3" sx={{color: 'white', fontWeight: 'bold', justifyContent:'center', textShadow: '2px 2px 6px rgba(0,0,0,0.8)' }}>
+                Stand with the WEA!
               </Typography>
             </Box>
       </Box>
@@ -38,7 +38,7 @@ export default function Home() {
             </Typography>
           </Box>
           <Box sx={{marginTop: '-40px', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '800px', height: '200px',}}>
-            <Typography sx={{fontSize: "22px", color: "darkgray", textAlign:'center'}}>
+            <Typography sx={{fontSize: "22px", color: "#525252", textAlign:'center'}}>
             A union is an organization formed by workers to represent their collective interests in negotiations with employers, primarily around issues like wages, benefits, working conditions, and job security.
             </Typography>
           </Box>
