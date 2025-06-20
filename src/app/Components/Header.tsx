@@ -3,8 +3,14 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { AppBar, Tabs, Tab, Box, Toolbar, Typography } from '@mui/material';
 import { useRouter } from 'next/navigation'; 
+// import { Inter } from "next/font/google";
 
 
+
+// const inter = Inter({
+//   variable: "--font-inter",
+//   subsets: ["latin"],
+// });
 
 const Header = () => {
   const [value, setValue] = useState(0);
@@ -45,8 +51,8 @@ const Header = () => {
         {/* pizza logo */}
         <Box sx={{ display: 'flex', alignItems: 'center', flexDirection:"row"}}>
         <Image src="/images/pizza.jpeg" alt="Logo" width={50} height={50} />
-          <Typography sx={{color:"black", marginLeft: "26px", fontSize:"28px", fontFamily:'Bebas', fontWeight:'bold'}}>
-            WOODSTOCKS EMPLOYEE ALLIANCE
+          <Typography sx={{color:"black", marginLeft: "26px", fontSize:"28px", fontWeight:'bold'}}>
+            Woodstock&apos;s Employee Alliance
           </Typography>
         </Box>
 
@@ -63,39 +69,59 @@ const Header = () => {
           >
             <Tab
               label="Home"
-              className='tab-style'
               sx={{
                 textTransform: 'none',
-                fontFamily: 'Creato',
-                fontSize: '18px'
+                fontSize: '18px',
+                color: 'black',
+                '&.Mui-selected': {
+                  color: '#f44336',
+                },
+                '&.Mui-focusVisible': {
+                  backgroundColor: 'transparent',
+                },
               }}
             />
             <Tab
               label="Who We Are"
-              className='tab-style'
               sx={{
                 textTransform: 'none',
-                fontFamily: 'Creato',
-                fontSize: '18px'
+                fontSize: '18px',
+                color: 'black',
+                '&.Mui-selected': {
+                  color: '#f44336',
+                },
+                '&.Mui-focusVisible': {
+                  backgroundColor: 'transparent',
+                },
               }}
             />
 
             <Tab
               label="Contact Us"
-              className='tab-style'
               sx={{
                 textTransform: 'none',
-                fontFamily: 'Creato',
-                fontSize: '18px'
+                fontSize: '18px',
+                color: 'black',
+                '&.Mui-selected': {
+                  color: '#f44336',
+                },
+                '&.Mui-focusVisible': {
+                  backgroundColor: 'transparent',
+                },
               }}
             />
             <Tab
               label="FAQs"
-              className='tab-style'
               sx={{
                 textTransform: 'none',
-                fontFamily: 'Creato',
-                fontSize: '18px'
+                fontSize: '18px',
+                color: 'black',
+                '&.Mui-selected': {
+                  color: '#f44336',
+                },
+                '&.Mui-focusVisible': {
+                  backgroundColor: 'transparent',
+                },
               }}
             />
           </Tabs>

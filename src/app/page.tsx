@@ -25,7 +25,7 @@ export default function Home() {
             />
             <Box sx={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.4)', zIndex: 1 }} />
             <Box sx={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 2 }}>
-              <Typography variant="h3" sx={{ color: 'white', fontWeight: 'bold', fontFamily: 'Creato Bold', marginTop: '15px', textShadow: '2px 2px 6px rgba(0,0,0,0.8)' }}>
+              <Typography variant="h3" sx={{ color: 'white', fontWeight: 'bold', marginTop: '15px', textShadow: '2px 2px 6px rgba(0,0,0,0.8)' }}>
                 Woodstock&apos;s Employee Alliance
               </Typography>
             </Box>
@@ -33,12 +33,12 @@ export default function Home() {
       
         <Box sx={{display:'flex', flexDirection:'column', marginTop:"100px"}}>
           <Box sx={{display:'flex', justifyContent:'center'}}>
-            <Typography sx={{fontFamily:'Creato', fontWeight:'bold', fontSize: "32px"}}>
+            <Typography sx={{fontWeight:'bold', fontSize: "32px"}}>
               What is a Union?
             </Typography>
           </Box>
           <Box sx={{display:'flex', justifyContent:'center'}}>
-            <Typography sx={{fontFamily:'Creato', fontSize: "22px", color: "darkgray"}}>
+            <Typography sx={{fontSize: "22px", color: "darkgray"}}>
               bunch of union text 
             </Typography>
           </Box>
